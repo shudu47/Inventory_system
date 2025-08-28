@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop with Omrak</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-image: url(img/beni.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f8d90f;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .content h2{
+        font-size: 65px;
+    }
+    .content p{
+        font-size: 20px;
+        color: #f7f4f4;
+    }
+
+    .order-btn {
+      padding: 15px 30px;
+      font-size: 1.4em;
+      border: none;
+      border-radius: 18px;
+      background-color: #363534;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 30px;
+      
+    }
+
+    .order-btn.clicked {
+      background-color: #4caf50;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    inventory management system (IMS)
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="#">Contact Us</a>
+    
+    <a href="#">Our Products</a>
+  </nav>
+
+  <div class="content">
+    <!-- <h2>Welcome to Our Shop</h2> -->
+    <p>Explore amazing products and place your order today.</p>
+   <a href="login.html"> <button class="order-btn" onclick="changeButtonColor(this)">Log In</button></a>
+  </div>
+
+  <footer>
+    Developed by  <br>contact: 0616229776<br> all right reserved
+  </footer>
+
+  <script>
+    function changeButtonColor(btn) {
+      btn.classList.toggle('clicked');
+    }
+  </script>
+
+</body>
+</html>
