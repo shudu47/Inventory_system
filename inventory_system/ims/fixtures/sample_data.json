@@ -1,0 +1,408 @@
+[
+  {
+    "model": "ims.category",
+    "pk": "C001",
+    "fields": {
+      "category_name": "Drinks",
+      "description": "All drinks"
+    }
+  },
+  {
+    "model": "ims.category",
+    "pk": "C002",
+    "fields": {
+      "category_name": "Electronics",
+      "description": "All electronic devices"
+    }
+  },
+  {
+    "model": "ims.category",
+    "pk": "C003",
+    "fields": {
+      "category_name": "Snacks",
+      "description": "All snacks "
+    }
+  },
+  {
+    "model": "ims.category",
+    "pk": "C004",
+    "fields": {
+      "category_name": "Bakery",
+      "description": "All breads and wheat products"
+    }
+  },
+  {
+    "model": "ims.category",
+    "pk": "C005",
+    "fields": {
+      "category_name": "Furnitures",
+      "description": "All wooden and Glass furnitures"
+    }
+  },
+
+  {
+    "model": "ims.supplier",
+    "pk": "S001",
+    "fields": {
+      "supplier_name": "Cocacola.Co"
+    }
+  },
+  {
+    "model": "ims.supplier",
+    "pk": "S002",
+    "fields": {
+      "supplier_name": "Hp.ent"
+    }
+  },
+  {
+    "model": "ims.supplier",
+    "pk": "S003",
+    "fields": {
+      "supplier_name": "Warsame.co"
+    }
+  },
+  {
+    "model": "ims.supplier",
+    "pk": "S004",
+    "fields": {
+      "supplier_name": "Shishi.bk"
+    }
+  },
+  {
+    "model": "ims.supplier",
+    "pk": "S005",
+    "fields": {
+      "supplier_name": "Deus.corp"
+    }
+  },
+
+  {
+    "model": "ims.customer",
+    "pk": "CU001",
+    "fields": {
+      "name": "Jinwoo",
+      "address": "Korea"
+    }
+  },
+  {
+    "model": "ims.customer",
+    "pk": "CU002",
+    "fields": {
+      "name": "Gojo",
+      "address": "Japan"
+    }
+  },
+  {
+    "model": "ims.customer",
+    "pk": "CU003",
+    "fields": {
+      "name": "Goku",
+      "address": "China"
+    }
+  },
+  {
+    "model": "ims.customer",
+    "pk": "CU004",
+    "fields": {
+      "name": "Dante",
+      "address": "America"
+    }
+  },
+  {
+    "model": "ims.customer",
+    "pk": "CU005",
+    "fields": {
+      "name": "kamado",
+      "address": "Japan"
+    }
+  },
+
+  {
+    "model": "ims.customercontact",
+    "pk": "CUS001",
+    "fields": {
+      "email": "qwe@gmail.com",
+      "phoneNumbers": "0712345678",
+      "customer": "CU001"
+    }
+  },
+  {
+    "model": "ims.customercontact",
+    "pk": "CUS002",
+    "fields": {
+      "email": "wer@gmail.com",
+      "phoneNumbers": "0712345678",
+      "customer": "CU002"
+    }
+  },
+  {
+    "model": "ims.customercontact",
+    "pk": "CUS003",
+    "fields": {
+      "email": "ert@gmail.com",
+      "phoneNumbers": "0712345678",
+      "customer": "CU003"
+    }
+  },
+  {
+    "model": "ims.customercontact",
+    "pk": "CUS004",
+    "fields": {
+      "email": "rty@gmail.com",
+      "phoneNumbers": "0712345678",
+      "customer": "CU004"
+    }
+  },
+  {
+    "model": "ims.customercontact",
+    "pk": "CUS005",
+    "fields": {
+      "email": "tyu@gmail.com",
+      "phoneNumbers": "0712345678",
+      "customer": "CU005"
+    }
+  },
+
+  {
+    "model": "ims.suppliercontact",
+    "pk": "CS001",
+    "fields": {
+      "email": "cocacola@gmail.com",
+      "phoneNumber": "0712345678",
+      "supplier": "S001"
+    }
+  },
+  {
+    "model": "ims.suppliercontact",
+    "pk": "CS002",
+    "fields": {
+      "email": "hp@gmail.com",
+      "phoneNumber": "0712345678",
+      "supplier": "S002"
+    }
+  },
+  {
+    "model": "ims.suppliercontact",
+    "pk": "CS003",
+    "fields": {
+      "email": "warsame@gmail.com",
+      "phoneNumber": "0712345678",
+      "supplier": "S003"
+    }
+  },
+  {
+    "model": "ims.suppliercontact",
+    "pk": "CS004",
+    "fields": {
+      "email": "shishi@gmail.com",
+      "phoneNumber": "0712345678",
+      "supplier": "S004"
+    }
+  },
+  {
+    "model": "ims.suppliercontact",
+    "pk": "CS005",
+    "fields": {
+      "email": "deus@gmail.com",
+      "phoneNumber": "0712345678",
+      "supplier": "S005"
+    }
+  },
+
+  {
+    "model": "ims.product",
+    "pk": "P001",
+    "fields": {
+      "name": "juice",
+      "number": 2,
+      "picture": "",
+      "category": "C001",
+      "supplier": "S001"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P002",
+    "fields": {
+      "name": "Computer",
+      "number": 0,
+      "picture": "",
+      "category": "C002",
+      "supplier": "S002"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P003",
+    "fields": {
+      "name": "Biscuits",
+      "number": 0,
+      "picture": "",
+      "category": "C003",
+      "supplier": "S003"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P004",
+    "fields": {
+      "name": "Bread",
+      "number": 0,
+      "picture": "",
+      "category": "C004",
+      "supplier": "S004"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P005",
+    "fields": {
+      "name": "Chair",
+      "number": 0,
+      "picture": "",
+      "category": "C005",
+      "supplier": "S005"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P006",
+    "fields": {
+      "name": "Smartphones",
+      "number": 0,
+      "picture": "",
+      "category": "C002",
+      "supplier": "S005"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P007",
+    "fields": {
+      "name": "TV",
+      "number": 0,
+      "picture": "",
+      "category": "C002",
+      "supplier": "S002"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P008",
+    "fields": {
+      "name": "SODA",
+      "number": 0,
+      "picture": "",
+      "category": "C001",
+      "supplier": "S004"
+    }
+  },
+  {
+    "model": "ims.product",
+    "pk": "P009",
+    "fields": {
+      "name": "BOOKS",
+      "number": 0,
+      "picture": "",
+      "category": "C001",
+      "supplier": "S001"
+    }
+  },
+
+  {
+    "model": "ims.purchase",
+    "pk": "PU001",
+    "fields": {
+      "purchase_date": "2025-07-17",
+      "product": "P001"
+    }
+  },
+  {
+    "model": "ims.purchase",
+    "pk": "PU002",
+    "fields": {
+      "purchase_date": "2025-07-17",
+      "product": "P002"
+    }
+  },
+  {
+    "model": "ims.purchase",
+    "pk": "PU003",
+    "fields": {
+      "purchase_date": "2025-07-17",
+      "product": "P003"
+    }
+  },
+  {
+    "model": "ims.purchase",
+    "pk": "PU004",
+    "fields": {
+      "purchase_date": "2025-07-17",
+      "product": "P004"
+    }
+  },
+  {
+    "model": "ims.purchase",
+    "pk": "PU005",
+    "fields": {
+      "purchase_date": "2025-07-17",
+      "product": "P005"
+    }
+  },
+
+  {
+    "model": "ims.orderdetail",
+    "pk": "OD001",
+    "fields": {
+      "order_created_by": "2025-07-17T17:12:50",
+      "order_updated_at": "2025-07-18T17:12:50",
+      "order_status": "NotDelivered",
+      "product": "P001",
+      "customer": "CU001"
+    }
+  },
+  {
+    "model": "ims.orderdetail",
+    "pk": "OD002",
+    "fields": {
+      "order_created_by": "2025-07-17T17:12:50",
+      "order_updated_at": "2025-07-18T17:12:50",
+      "order_status": "pending",
+      "product": "P002",
+      "customer": "CU002"
+    }
+  },
+  {
+    "model": "ims.orderdetail",
+    "pk": "OD003",
+    "fields": {
+      "order_created_by": "2025-07-17T17:12:50",
+      "order_updated_at": "2025-07-18T17:12:50",
+      "order_status": "Delivered",
+      "product": "P003",
+      "customer": "CU003"
+    }
+  },
+  {
+    "model": "ims.orderdetail",
+    "pk": "OD004",
+    "fields": {
+      "order_created_by": "2025-07-17T17:12:50",
+      "order_updated_at": "2025-07-18T17:12:50",
+      "order_status": "pending",
+      "product": "P004",
+      "customer": "CU004"
+    }
+  },
+  {
+    "model": "ims.orderdetail",
+    "pk": "OD005",
+    "fields": {
+      "order_created_by": "2025-07-17T17:12:50",
+      "order_updated_at": "2025-07-18T17:12:50",
+      "order_status": "Delivered",
+      "product": "P005",
+      "customer": "CU005"
+    }
+  }
+]

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 23, 2025 at 07:49 AM
+-- Generation Time: Sep 22, 2025 at 04:10 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -126,6 +126,8 @@ INSERT INTO `orderdetails` (`order_id`, `order_created_by`, `order_updated_at`, 
 CREATE TABLE `products` (
   `product_id` varchar(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
+  `number` int(11) NOT NULL,
+  `picture` varchar(16000) NOT NULL,
   `category_id` varchar(11) DEFAULT NULL,
   `supplier_id` varchar(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -134,16 +136,16 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `name`, `category_id`, `supplier_id`) VALUES
-('P001', 'juice', 'C001', 'S001'),
-('P002', 'Computer', 'C002', 'S002'),
-('P003', 'Biscuits', 'C003', 'S003'),
-('P004', 'Bread\r\n', 'C004', 'S004'),
-('P005', 'Chair', 'C005', 'S005'),
-('P006', 'Smartphones', 'C002', 'S005'),
-('P007', 'TV', 'C002', 'S002'),
-('P008', 'SODA', 'C001', 'S004'),
-('P009', 'BOOKS', 'C001', 'S001');
+INSERT INTO `products` (`product_id`, `name`, `number`, `picture`, `category_id`, `supplier_id`) VALUES
+('P001', 'juice', 0, '', 'C001', 'S001'),
+('P002', 'Computer', 0, '', 'C002', 'S002'),
+('P003', 'Biscuits', 0, '', 'C003', 'S003'),
+('P004', 'Bread\r\n', 0, '', 'C004', 'S004'),
+('P005', 'Chair', 0, '', 'C005', 'S005'),
+('P006', 'Smartphones', 0, '', 'C002', 'S005'),
+('P007', 'TV', 0, '', 'C002', 'S002'),
+('P008', 'SODA', 0, '', 'C001', 'S004'),
+('P009', 'BOOKS', 0, '', 'C001', 'S001');
 
 -- --------------------------------------------------------
 

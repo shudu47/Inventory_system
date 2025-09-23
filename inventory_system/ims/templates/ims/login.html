@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IMS</title>
+    <style>
+        body {
+            background-image: url("{% static 'ims/beni.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .signup {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border-radius: 16px;
+            border: 1px solid #fff;
+            backdrop-filter: blur(8px);
+            transition: box-shadow 0.7s;
+            box-shadow: 0 0 10px 5px white;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 15px;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #5a591a;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 150px;
+            height: 35px;
+            margin: 20px 30px 20px 90px;
+            border: none;
+            border-radius: 18px;
+            color: #fff;
+            font-size: 17px;
+            background: #0a0a0a;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            transition: box-shadow 0.7s;
+            box-shadow: 0 0 10px 5px white;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 15px;
+            font-size: 16px;
+        }
+
+        .para-2 {
+            text-align: center;
+            color: #fff;
+            font-size: 17px;
+            margin: -10px;
+        }
+
+        .para-2 a {
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sign In To Inventory Management System</h1>
+    <h1>(IMS)</h1>
+
+    <div class="signup">
+        <h2>Sign In</h2>
+        <h3>Sign in if you have an account</h3>
+
+        <!-- Django form -->
+        <form method="POST" action="{% url 'dashboard' %}">
+            {% csrf_token %}
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <input type="submit" value="Submit">
+
+            <p class="para-2"><a href="#">Forgot password?</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

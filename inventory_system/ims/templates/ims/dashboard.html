@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMS Dashboard</title>
+    <link rel="stylesheet" href="{% static 'ims/dashboard.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Inventory Management System (IMS)</h1>
+    </header>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Our Products</a>
+    </nav>
+
+    <div class="dashboard">
+        <h1 class="dashboard-title">Admin Dashboard</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                        </svg>
+                    </div>
+                    <span class="card-title">Total Products</span>
+                </div>
+                <div class="card-content">
+                    <p>Number of products: {{ total_products }}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                        </svg>
+                    </div>
+                    <span class="card-title">Total Suppliers</span>
+                </div>
+                <div class="card-content">
+                    <p>Suppliers: {{ total_suppliers }}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                        </svg>
+                    </div>
+                    <span class="card-title">Total Customers</span>
+                </div>
+                <div class="card-content">
+                    <p>Customers: {{ total_customers }}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                        </svg>
+                    </div>
+                    <span class="card-title">Total Purchases</span>
+                </div>
+                <div class="card-content">
+                    <p>Purchases: {{ total_purchases }}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 8-4 8-4s8 0 8 4" />
+                        </svg>
+                    </div>
+                    <span class="card-title">Total Orders</span>
+                </div>
+                <div class="card-content">
+                    <p>No of orders: {{ total_orders }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Developed by <br> contact: 0616229776 <br> All rights reserved
+    </footer>
+</body>
+
+</html>
